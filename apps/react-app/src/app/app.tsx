@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 
 export function App() {
+  console.log('test change 1');
   return (
     <div className={styles.app}>
       <header className="flex">
