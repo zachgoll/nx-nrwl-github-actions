@@ -6,9 +6,9 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "ci:lint:all": "nx run-many --target=lint --all",
-    "ci:test:all": "nx run-many --target=test --all",
-    "ci:build:all": "nx run-many --target=build --all"
+    "ci:lint:all": "nx affected --target=lint --base=origin/main",
+    "ci:test:all": "nx affected --target=test --base=origin/main",
+    "ci:build:all": "nx affected --target=build --base=origin/main"
   },
   "private": true,
   "dependencies": {
