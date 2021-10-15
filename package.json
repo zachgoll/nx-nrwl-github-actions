@@ -8,7 +8,8 @@
     "test": "nx test",
     "ci:lint:all": "nx affected --target=lint --base=remotes/origin/main",
     "ci:test:all": "nx affected --target=test --base=remotes/origin/main",
-    "ci:build:all": "nx affected --target=build --base=remotes/origin/main"
+    "ci:build:all": "nx affected --target=build --base=remotes/origin/main",
+    "ci:deploy": "node ./tools/scripts/deploy.js"
   },
   "private": true,
   "dependencies": {
