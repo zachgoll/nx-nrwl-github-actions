@@ -2,9 +2,6 @@ name: pull-request-workflow
 
 on:
   pull_request:
-    # Ignore main because if code pushed to main, we know it has been tested already via this flow
-    branches-ignore:
-      - 'main'
     # Changes that don't require a CI/CD run
     paths-ignore:
       - 'README.md'
