@@ -5,7 +5,8 @@ on:
     branches: [main]
 env:
   BEFORE_SHA: ${{ github.event.before }}
-  TEST_API_ENDPOINT: ${{ secrets.TEST_API_ENDPOINT }} # Often, you will need access to secrets for your deployment scripts
+  # Define this in the repo's "secrets" tab under settings
+  TEST_API_ENDPOINT: ${{ secrets.TEST_API_ENDPOINT }}
 jobs:
   build:
     runs-on: ubuntu-latest
