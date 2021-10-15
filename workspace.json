@@ -49,6 +49,12 @@
             "jestConfig": "apps/api/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "deploy": {
+          "executor": "@nrwl/workspace:run-script",
+          "options": {
+            "script": "ci:deploy:api"
+          }
         }
       }
     },
@@ -126,6 +132,12 @@
           "options": {
             "jestConfig": "apps/react-app/jest.config.js",
             "passWithNoTests": true
+          }
+        },
+        "deploy": {
+          "executor": "@nrwl/workspace:run-script",
+          "options": {
+            "script": "ci:deploy:react"
           }
         }
       }
