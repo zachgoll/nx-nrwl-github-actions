@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 'lts/fermium'
+      - run: yarn
       - run: yarn ci:lint:all
       - run: yarn ci:test:all
       - run: yarn ci:build:all
